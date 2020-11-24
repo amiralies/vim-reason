@@ -55,7 +55,7 @@ syntax match reasonArrowPipe "\v\@\@"
 
 " Comment
 syntax region reasonComment start="//" end="$" contains=reasonTodo,@Spell
-syntax region reasonComment start="/\*\s*" end="\*/" contains=@Spell,reasonComment,reasonTodo
+syntax region reasonComment start="/\*\s*" end="\*/" contains=reasonTodo,@Spell
 
 syntax keyword reasonTodo contained TODO FIXME XXX NOTE
 
