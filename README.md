@@ -8,7 +8,7 @@
 
 ## Installation
 
-`vim-reason` can be installed manually or your favourite plugin manager.
+`vim-reason` can be installed manually or with your favourite plugin manager.
 
 Plugin manager examples:
 
