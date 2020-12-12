@@ -75,6 +75,9 @@ syntax match reasonModuleOrVariant "\v<[A-Z][A-Za-z0-9_'$]*"
 syntax match reasonPolyVariant "\v`[A-za-z][A-Za-z0-9_'$]*"
 syntax match reasonModuleChain "\v<[A-Z][A-Za-z0-9_'$]*\."
 
+" Attribute
+syntax match reasonAttribute "\v\@([a-zA-z][A-Za-z0-9_']*)(\.([a-zA-z])[A-Za-z0-9_']*)*"
+
 " String
 syntax match reasonUnicodeChar "\v\\u[A-Fa-f0-9]\{4}" contained
 syntax match reasonEscapedChar "\v\\[\\"'ntbrf]" contained
@@ -103,5 +106,6 @@ highlight default link reasonUnicodeChar Character
 highlight default link reasonEscapedChar Character
 highlight default link reasonString String
 highlight default link reasonBsInterpolationVariable Macro
+highlight default link reasonAttribute PreProc
 
 let b:current_syntax = "reason"
