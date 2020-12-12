@@ -2,6 +2,8 @@ if exists("b:current_syntax")
   finish
 endif
 
+syntax sync minlines=800
+
 " Boolean
 syntax keyword reasonBoolean true false
 
