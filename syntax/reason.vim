@@ -76,7 +76,7 @@ syntax match reasonPolyVariant "\v`[A-za-z][A-Za-z0-9_'$]*"
 syntax match reasonModuleChain "\v<[A-Z][A-Za-z0-9_'$]*\."
 
 " Attribute
-syntax match reasonAttribute "\v\@([a-zA-z][A-Za-z0-9_']*)(\.([a-zA-z])[A-Za-z0-9_']*)*"
+syntax match reasonAttribute "\v\@{1,3}([a-zA-z][A-Za-z0-9_']*)(\.([a-zA-z])[A-Za-z0-9_']*)*"
 
 " String
 syntax match reasonUnicodeChar "\v\\u[A-Fa-f0-9]\{4}" contained
